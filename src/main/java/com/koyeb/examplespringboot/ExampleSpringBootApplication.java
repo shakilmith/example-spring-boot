@@ -16,4 +16,9 @@ public class ExampleSpringBootApplication {
     public String hello() {
       return String.format("Hello world!");
     }
+
+    @GetMapping("/greeting")
+    public String getGreeting(){
+        return "Hello, Shakil";
+    }
 }

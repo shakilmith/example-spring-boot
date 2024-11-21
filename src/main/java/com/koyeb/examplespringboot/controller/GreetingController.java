@@ -1,14 +1,14 @@
 package com.koyeb.examplespringboot.controller;
 
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class GreetingController {
 
     @GetMapping("/hi")
-    public String getGreeting(){
-        return "Hello, World";
+    public String hello(){
+        return "hello.html";
     }
 }
